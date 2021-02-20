@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>CS185: PR 2</title>
+</head>
+<body>
+    <div class="header">
+        <h1>CS185: Programming Assignment 2</h1>
+        <p>Responsiveness and Interactive Elements</p>
+    </div>
+    <div class="menu">
+        <a href="index.html" class="active">Text</a>
+        <a href="images.html">Images</a>
+        <a href="videos.html">Videos</a>
+        <a href="table.html">Table</a>
+        <a href="email.html">E-mail</a>
+    </div>
+    <div class="content">
+        <br/>
+        <h2>Text</h2>
+        <p>First things first: <code>Hello, World!</code></p><hr/>
+        <p>The static assets for this page can be found at <a href="https://github.com/ganeshsankaran/cs185-pr2">this GitHub repo</a>.</p>
+        <p>To download the source code, please do the following: </p>
+        <pre>git clone https://github.com/ganeshsankaran/cs185-pr2<br/>git pull origin master</pre>
+        <hr/>
+        <p>This website has 4 tabbed pages which display content of the following kinds of data:</p>
+        <ul>
+            <li>Text</li>
+            <li>Images</li>
+            <li>Videos</li>
+            <li>Table</li>
+        </ul>
+        <p>These pages can be accessed via the navigation menu above. Enjoy!</p><hr/>
+        <p>To help me improve this website, please submit your feedback:</p>
+        <p><i>Note: this form doesn't actually do anything!</i></p>
+        <form>
+            <label>What is your name?</label><br/>
+            <input type="text"><br/><br/>
+            <label>Do you like this website?</label><br/>
+            <input name="like" type="radio">
+            <label>Yes</label><br/>
+            <input name="like" type="radio">
+            <label>Also yes</label><br/><br/>
+            <input type="checkbox">
+            <label>Sign me up for the fan club!</label><br/><br/>
+            <input type="button" value="Submit!">
+        </form>
+        <br/>
+    </div>
+    <div class="footer">
+        <p>By Ganesh Sankaran, Winter 2021</p>
+    </div>
+    <button id="scroll" onClick="scrollToTop()">Up &#8593;</button>
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>

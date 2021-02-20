@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>CS185: PR 2</title>
+</head>
+<body>
+    <div class="header">
+        <h1>CS185: Programming Assignment 2</h1>
+        <p>Responsiveness and Interactive Elements</p>
+    </div>
+    <div class="menu">
+        <a href="index.html">Text</a>
+        <a href="images.html" class="active">Images</a>
+        <a href="videos.html">Videos</a>
+        <a href="table.html">Table</a>
+        <a href="email.html">E-mail</a>
+    </div>
+    <div class="content">
+        <br/>
+        <h2>Images</h2>
+        <p>Here are some stock images from Unsplash:</p>
+        <div class="grid">
+            <div class="grid-item">
+                <img onClick="showImgOverlay(this)" src="img.jpg">
+            </div>
+            <div class="grid-item">
+                <img onClick="showImgOverlay(this)" src="img1.jpg">
+            </div>
+            <div class="grid-item">
+                <img onClick="showImgOverlay(this)" src="img2.jpg">
+            </div>
+            <div class="grid-item">
+                <img onClick="showImgOverlay(this)" src="img3.jpg">
+            </div>
+            <div class="grid-item">
+                <img onClick="showImgOverlay(this)" src="img4.jpg">
+            </div>
+            <div class="grid-item">
+                <img onClick="showImgOverlay(this)" src="img5.jpg">
+            </div>
+            <div class="grid-item">
+                <img onClick="showImgOverlay(this)" src="img6.jpg">
+            </div>
+            <div class="grid-item">
+                <img onClick="showImgOverlay(this)" src="img7.jpg">
+            </div>
+        </div>
+        <br/>
+    </div>
+    <div class="footer">
+        <p>By Ganesh Sankaran, Winter 2021</p>
+    </div>
+    <button id="scroll" onClick="scrollToTop()">Up &#8593;</button>
+    <div id="overlay" class="overlay" onClick="hideImgOverlay()">
+        <img id="overlay-item" class="overlay-item" onClick="event.stopPropagation()">
+    </div>
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>

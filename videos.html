@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>CS185: PR 2</title>
+</head>
+<body>
+    <div class="header">
+        <h1>CS185: Programming Assignment 2</h1>
+        <p>Responsiveness and Interactive Elements</p>
+    </div>
+    <div class="menu">
+        <a href="index.html">Text</a>
+        <a href="images.html">Images</a>
+        <a href="videos.html" class="active">Videos</a>
+        <a href="table.html">Table</a>
+        <a href="email.html">E-mail</a>
+    </div>
+    <div class="content">
+        <br/>
+        <h2>Videos</h2>
+        <p>Here are some stock videos.</p>
+        <div class="grid">
+            <div class="grid-item">
+                <video onClick="showVideoOverlay(this)" src="video.mp4" type="video/mp4" autoplay loop muted></video>
+            </div>
+            <div class="grid-item">
+                <video onClick="showVideoOverlay(this)" src="video1.mp4" type="video/mp4" autoplay loop muted></video>
+            </div>
+            <div class="grid-item">
+                <video onClick="showVideoOverlay(this)" src="video2.mp4" type="video/mp4" autoplay loop muted></video>
+            </div>
+            <div class="grid-item">
+                <video onClick="showVideoOverlay(this)" src="video3.mp4" type="video/mp4" autoplay loop muted></video>
+            </div>
+            <div class="grid-item">
+                <video onClick="showVideoOverlay(this)" src="video4.mp4" type="video/mp4" autoplay loop muted></video>
+            </div>
+            <div class="grid-item">
+                <video onClick="showVideoOverlay(this)" src="video5.mp4" type="video/mp4" autoplay loop muted></video>
+            </div>
+        </div>
+        <br/>
+    </div>
+    <div class="footer">
+        <p>By Ganesh Sankaran, Winter 2021</p>
+    </div>
+    <button id="scroll" onClick="scrollToTop()">Up &#8593;</button>
+    <div id="overlay" class="overlay" onClick="hideVideoOverlay()">
+        <video id="overlay-item" class="overlay-item" onClick="event.stopPropagation()" controls></video>
+    </div>
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>

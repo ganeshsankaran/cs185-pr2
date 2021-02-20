@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>CS185: PR 2</title>
+</head>
+<body>
+    <div class="header">
+        <h1>CS185: Programming Assignment 2</h1>
+        <p>Responsiveness and Interactive Elements</p>
+    </div>
+    <div class="menu">
+        <a href="index.html">Text</a>
+        <a href="images.html">Images</a>
+        <a href="videos.html">Videos</a>
+        <a href="table.html">Table</a>
+        <a href="email.html" class="active">E-mail</a>
+    </div>
+    <div class="content">
+        <br/>
+        <h2>E-mail</h2>
+        <label>E-mail: </label><br/>
+        <input id="email" type="email">
+        <p id="result"></p>
+        <button onClick="validateEmail()">Submit!</button>
+        <br/>
+    </div>
+    <div class="footer">
+        <p>By Ganesh Sankaran, Winter 2021</p>
+    </div>
+    <button id="scroll" onClick="scrollToTop()">Up &#8593;</button>
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
